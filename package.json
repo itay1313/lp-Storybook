@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "format": "prettier --write stories/**/*.js"
   },
   "keywords": [],
   "author": "Itay Haephrati",
@@ -20,5 +21,8 @@
     "babel-loader": "^8.2.2",
     "lit-html": "^1.4.1",
     "storybook-dark-mode": "^1.0.8"
+  },
+  "dependencies": {
+    "prettier": "^2.3.1"
   }
 }
