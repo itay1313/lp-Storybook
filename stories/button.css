@@ -1,0 +1,48 @@
+.storybook-button {
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13.33px;
+	line-height: 133%;
+	border: 0;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 7.5px 12px;
+}
+.storybook-button--primary {
+	background-color: #0c50ff;
+	color: #f8faff;
+	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.16), 1px 1px 3px rgba(0, 0, 0, 0.18),
+		-7px 1px 16px rgba(0, 0, 0, 0.4);
+		border: 2px solid #0c50ff;
+}
+.storybook-button--secondary {
+	color: #253357;
+	background-color: #cbd6f2;
+	border: 2px solid #cbd6f2;
+}
+.storybook-button--Tretiary {
+	background: transparent;
+	color: #253357;
+	border: 2px solid currentColor;
+	filter: drop-shadow(2px -2px 0px rgba(0, 0, 0, 0.25)), drop-shadow(-2px 2px 0px rgba(0, 0, 0, 0.25));
+}
+.storybook-button--Destructive {
+	background-color: #d72329;
+	color: #f8faff;
+	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.16), 1px 1px 3px rgba(0, 0, 0, 0.18),
+		-7px 1px 16px rgba(0, 0, 0, 0.4);
+		border: 2px solid #d72329;
+}
+.storybook-button--Ghost {
+	color: #0a40cc;
+	background: transparent;
+	border: 2px solid transparent;
+}
+.storybook-button--Inline {
+	background: transparent;
+	color: #0c50ff;
+	font-weight: normal;
+	border: 2px solid transparent;
+}
