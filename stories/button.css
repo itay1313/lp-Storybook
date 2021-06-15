@@ -11,20 +11,20 @@
 	padding: 7.5px 12px;
 }
 .storybook-button--primary {
-	background-color: #0c50ff;
+	background-color: var(--color-blue-default-d);
 	color: #f8faff;
 	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.16), 1px 1px 3px rgba(0, 0, 0, 0.18),
 		-7px 1px 16px rgba(0, 0, 0, 0.4);
-		border: 2px solid #0c50ff;
+		border: 2px solid var(--color-blue-default-d);
 }
 .storybook-button--secondary {
-	color: #253357;
-	background-color: #cbd6f2;
-	border: 2px solid #cbd6f2;
+	color: var(--color-ocean-darker);
+	background-color: var(--color-ocean-lighter);
+	border: 2px solid var(--color-ocean-lighter);
 }
 .storybook-button--Tretiary {
 	background: transparent;
-	color: #253357;
+	color: var(--color-ocean-darker);
 	border: 2px solid currentColor;
 	filter: drop-shadow(2px -2px 0px rgba(0, 0, 0, 0.25)), drop-shadow(-2px 2px 0px rgba(0, 0, 0, 0.25));
 }
@@ -36,13 +36,13 @@
 		border: 2px solid #d72329;
 }
 .storybook-button--Ghost {
-	color: #0a40cc;
+	color: var(--color-blue-dark-l);
 	background: transparent;
 	border: 2px solid transparent;
 }
 .storybook-button--Inline {
 	background: transparent;
-	color: #0c50ff;
+	color: var(--color-blue-default-d);
 	font-weight: normal;
 	border: 2px solid transparent;
 }
