@@ -1,10 +1,33 @@
-import { Button } from './Button';
+import { Button } from "./Button";
 
 export default {
-  title: 'Example/Button',
+  title: "Example/Button",
   argTypes: {
-    backgroundColor: { control: 'color' },
-    onClick: { action: 'onClick' },
+    theme: {
+      options: ["dark", "light"],
+      control: { type: "inline-radio" },
+    },
+    variant: {
+      options: [
+        "primary",
+        "secondary",
+        "tertiary",
+        "destructive",
+        "ghost",
+        "inline",
+      ],
+      table: {
+        disable: true,
+      },
+    },
+    size: {
+      options: ["medium", "small"],
+      control: { type: "inline-radio" },
+    },
+  },
+  args: {
+    theme: "dark",
+    size: "medium",
   },
 };
 
@@ -12,35 +35,36 @@ const Template = (args) => Button(args);
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
-  label: 'Button',
+  label: "Primary Button",
+  variant: "primary",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Button',
+  label: "Secondary Button",
+  variant: "secondary",
 };
 
-export const Tretiary = Template.bind({});
-Tretiary.args = {
-  size: 'Tretiary',
-  label: 'Button',
+export const Tertiary = Template.bind({});
+Tertiary.args = {
+  label: "Tertiary Button",
+  variant: "tertiary",
 };
 
 export const Destructive = Template.bind({});
 Destructive.args = {
-  size: 'Destructive',
-  label: 'Button',
+  label: "Destructive Button",
+  variant: "destructive",
 };
 
 export const Ghost = Template.bind({});
 Ghost.args = {
-  size: 'Ghost',
-  label: 'Button',
+  label: "Ghost Button",
+  variant: "ghost",
 };
 
 export const Inline = Template.bind({});
 Inline.args = {
-  size: 'Inline',
-  label: 'Button',
+  label: "Inline Button",
+  variant: "inline",
 };

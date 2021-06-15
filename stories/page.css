@@ -1,3 +1,9 @@
+@import 'typography.css';
+@import 'colors.css';
+@import 'shadows.css';
+@import 'border-radius.css';
+@import 'spacing.css';
+
 section {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
