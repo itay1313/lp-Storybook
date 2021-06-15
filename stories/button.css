@@ -2,41 +2,115 @@
 	cursor: pointer;
 	font-style: normal;
 	display: inline-block;
-	padding: 7.5px 12px;
+  border: 0px;
+	font-family: var(--font-face-roboto);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-button);
+	line-height: var(--font-line-height-button);
+	border-radius: var(--border-radius-s);
+	padding: var(--space-xxs) var(--space-s);
+  height: 2rem;
 }
-.storybook-button--primary {
+
+.button--medium {
+  height: 2rem;
+	padding: var(--space-xxs) var(--space-s);
+}
+.button--small {
+  height: 1.5rem;
+	padding: var(--space-xxs) var(--space-xs);
+}
+
+.button--primary {
 	background-color: var(--color-blue-default-d);
-	color: #f8faff;
-	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.16), 1px 1px 3px rgba(0, 0, 0, 0.18),
-		-7px 1px 16px rgba(0, 0, 0, 0.4);
-		border: 2px solid var(--color-blue-default-d);
+	color: var(--color-white);
+	text-shadow: var(--shadow-light-text-m);
 }
-.storybook-button--secondary {
-	color: var(--color-ocean-darker);
+.button--primary.theme-dark {
+	background-color: var(--color-blue-default-d);
+	color: var(--color-white);
+}
+.button--primary.theme-light {
+	background-color: var(--color-blue-default-l);
+	color: var(--color-white);
+}
+
+.button--secondary {
+	background-color: var(--color-ocean-white);
+	color: var(--color-periwinkle-darker-d);
+	text-shadow: var(--shadow-dark-text-m);
+}
+.button--secondary.theme-dark {
+	background-color: var(--color-ocean-white);
+	color: var(--color-periwinkle-darker-d);
+}
+.button--secondary.theme-light {
 	background-color: var(--color-ocean-lighter);
-	border: 2px solid var(--color-ocean-lighter);
-}
-.storybook-button--Tretiary {
-	background: transparent;
 	color: var(--color-ocean-darker);
-	border: 2px solid currentColor;
-	filter: drop-shadow(2px -2px 0px rgba(0, 0, 0, 0.25)), drop-shadow(-2px 2px 0px rgba(0, 0, 0, 0.25));
 }
-.storybook-button--Destructive {
-	background-color: #d72329;
-	color: #f8faff;
-	text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.16), 1px 1px 3px rgba(0, 0, 0, 0.18),
-		-7px 1px 16px rgba(0, 0, 0, 0.4);
-		border: 2px solid #d72329;
+
+.button--tertiary {
+	background-color: transparent;
+	color: var(--color-ocean-lightest);
+  border: 2px solid var(--color-ocean-lighter);
+	text-shadow: var(--shadow-light-text-m);
 }
-.storybook-button--Ghost {
+.button--tertiary.theme-dark {
+	background-color: transparent;
+	color: var(--color-ocean-lightest);
+  border: 2px solid var(--color-ocean-lighter);
+	text-shadow: var(--shadow-light-text-m);
+}
+.button--tertiary.theme-light {
+	background-color: transparent;
+	color: var(--color-periwinkle-dark-l);
+  border: 2px solid var(--color-periwinkle-dark-l);
+	text-shadow: var(--shadow-dark-text-m);
+}
+
+.button--destructive {
+	background-color: var(--color-red-default-d);
+	color: var(--color-white);
+	text-shadow: var(--shadow-light-text-m);
+}
+.button--destructive.theme-dark {
+	background-color: var(--color-red-default-d);
+	color: var(--color-white);
+}
+.button--destructive.theme-light {
+	background-color: var(--color-red-default-l);
+	color: var(--color-white);
+}
+
+
+.button--ghost {
+	background-color: transparent;
+	color: var(--color-white);
+	text-shadow: var(--shadow-cyan-default-d);
+}
+.button--ghost.theme-dark {
+	background-color: transparent;
+	color: var(--color-cyan-default-d);
+}
+.button--ghost.theme-light {
+	background-color: transparent;
 	color: var(--color-blue-dark-l);
-	background: transparent;
-	border: 2px solid transparent;
 }
-.storybook-button--Inline {
-	background: transparent;
-	color: var(--color-blue-default-d);
-	font-weight: normal;
-	border: 2px solid transparent;
+
+
+.button--inline {
+	font-weight: var(--font-weight-normal);
+  height: auto;
+  padding: 0;
+	background-color: transparent;
+	color: var(--color-white);
+	text-shadow: var(--shadow-cyan-default-d);
+}
+.button--inline.theme-dark {
+	background-color: transparent;
+	color: var(--color-cyan-default-d);
+}
+.button--inline.theme-light {
+	background-color: transparent;
+	color: var(--color-blue-dark-l);
 }
