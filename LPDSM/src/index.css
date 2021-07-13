@@ -351,7 +351,7 @@ input:-webkit-autofill {
   height: 0.85em;
   transform: translate3d(-50%, -50%, 0);
   background: transparent;
-  box-shadow: #2cc5d2 0 0 0 1px inset;
+  box-shadow: #FF6900 0 0 0 1px inset;
   content: '';
   display: block;
 }
@@ -359,7 +359,7 @@ input:-webkit-autofill {
   font-size: 16px;
   line-height: 24px;
   box-shadow: none;
-  color: #2cc5d2;
+  color: #FF6900;
   margin-top: -1px;
   font-family: 'percolate';
   speak: none;
@@ -392,7 +392,7 @@ input:-webkit-autofill {
 }
 .input-symbol input:focus + [class^="icon-"],
 .input-symbol input:focus + [class*=" icon-"] {
-  color: #2cc5d2;
+  color: #FF6900;
 }
 .input-symbol [class^="icon-"],
 .input-symbol [class*=" icon-"] {
@@ -883,7 +883,7 @@ a:focus {
   color: #eee;
 }
 .list-item .actions a:hover {
-  color: #2cc5d2;
+  color: #FF6900;
 }
 .list-item .actions a:active {
   color: #555;
@@ -895,7 +895,7 @@ a:focus {
   text-align: center;
 }
 .list-item.TASK_PINNED .icon-star {
-  color: #2cc5d2;
+  color: #FF6900;
 }
 .list-item.TASK_ARCHIVED input[type="text"] {
   color: #aaa;
@@ -965,7 +965,7 @@ a:focus {
 .wrapper-message [class*=" icon-"] {
   font-size: 48px;
   line-height: 56px;
-  color: #2cc5d2;
+  color: #FF6900;
   display: block;
 }
 .wrapper-message .title-message {
